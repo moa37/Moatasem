@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context=".addJob">
+
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="52dp"
+    android:padding="15dp"
+    android:text="Job Name :"
+    android:textSize="25sp"
+    android:fontFamily="@font/font"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/job"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Job Name"
+    android:inputType="textPersonName"
+    android:padding="15dp"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<TextView
+    android:id="@+id/textStart"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:text="Start Date :"
+    android:textSize="25sp"
+    android:fontFamily="@font/font"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/job" />
+
+<EditText
+    android:id="@+id/startDate"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="date"
+    android:padding="15dp"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/textStart" />
+
+<TextView
+    android:id="@+id/EndDate"
+    android:layout_width="411dp"
+    android:layout_height="68dp"
+    android:padding="15dp"
+    android:text="End Date :"
+    android:textSize="25sp"
+    android:fontFamily="@font/font"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+<EditText
+    android:id="@+id/editEnd"
+    android:layout_width="411dp"
+    android:layout_height="60dp"
+    android:ems="10"
+    android:inputType="date"
+    android:padding="15dp"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/EndDate" />
+
+<TextView
+    android:id="@+id/text"
+    android:layout_width="213dp"
+    android:layout_height="69dp"
+    android:padding="15dp"
+    android:text="Periority"
+    android:textSize="25sp"
+    android:fontFamily="@font/font"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.08"
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toBottomOf="@+id/editEnd" />
+
+<Spinner
+    android:id="@+id/spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:padding="15dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.928"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editEnd" />
+
+<Button
+    android:id="@+id/save"
+    android:layout_width="150dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="88dp"
+    android:onClick="saveButton"
+    android:text="Save"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

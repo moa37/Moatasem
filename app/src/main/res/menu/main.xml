@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/eJ"
+        android:title="Edit Job"
+        android:visible="true" />
+    <item
+        android:id="@+id/dJ"
+        android:title="Delete Job" />
+    <item
+        android:id="@+id/cH"
+        android:title="Change Periority" />
+</menu>
